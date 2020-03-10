@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+        #wrap {
+            width:800px;
+            margin:0 auto;
+        }
+
+        #header {
+            border-bottom:1px solid #cccccc;
+        }
+
+        #content p:first-child::selection {
+            background-color:blue;
+            color:yellow;
+        }
+
+        #history2::first-letter, #history1::first-letter{
+            font-size:2em;
+        }
+
+        #history2::first-line, #history1::first-line{
+            font-weight:bold;
+            color:#2160d1;
+        }
+
+        #footer ul {
+            overflow:hidden;
+            border:2px solid #cccccc;
+        }
+
+        #footer ul li {
+            list-style:none;
+            float:left; padding:20px;
+        }
+
+    </style>
+</head>
+<body>
+  <div id="wrap">
+
+        <div id="header">
+            <h1>새 포스팅</h1>
+        </div>
+
+        <div id="content">
+            <p>
+                포스팅의 내용이다. 포스팅의 내용이다. 포스팅의 내용이다. 포스팅의 내용이다. 포스팅의 내용이다. 포스팅의 내용이다. 포스팅의 내용이다. 포스팅의 내용이다. 포스팅의 내용이다. 포스팅의 내용이다. 포스팅의 내용이다. 포스팅의 내용이다. 포스팅의 내용이다.
+            </p>
+            <p id="history2">
+                2020 02월 29일<br />포스팅을 작성하는 중이다. 포스팅을 작성하는 중이다. 포스팅을 작성하는 중이다. 포스팅을 작성하는 중이다. 포스팅을 작성하는 중이다. 포스팅을 작성하는 중이다. 포스팅을 작성하는 중이다.포스팅을 작성하는 중이다.
+            </p>
+            <p id="history1">
+                2020 03월 22일<br />정보처리기사 필기 시험이 있는 날이다.
+            </p>
+        </div>
+
+        <div id="footer">
+            <ul>
+                <li><img src="http://www.sba.seoul.kr/kr/images/footer/f_logo.png"></li>
+                <li><img src="http://www.sba.seoul.kr/kr/images/footer/copyright.png"></li>
+            </ul>
+        </div>
+
+    </div>
+</body>
+</html>

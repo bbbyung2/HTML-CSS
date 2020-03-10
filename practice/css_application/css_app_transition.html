@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+      * { margin:0; padding: 0; }
+
+      #rec {
+        background-color: #ff0000;
+        width: 100px;
+        height: 100px;
+        transition-duration: 3s;
+        transition-delay: 2s;
+        transition-timing-function: ease-out;
+      }
+
+      #rec:hover {
+        background-color: #ffff00;
+        width: 200px;
+        height: 200px;
+      }
+
+      #rec:active {
+        background-color: blue;
+        width: 200px;
+        height: 200px;
+        border-radius: 100px;
+      }
+    </style>
+</head>
+<body>
+  <div>
+    <div id="rec"></div>
+  </div>
+</body>
+</html>

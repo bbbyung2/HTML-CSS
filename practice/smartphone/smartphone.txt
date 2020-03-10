@@ -1,0 +1,15 @@
+<스마트폰 레이아웃>
+*viewport : device별 특징 명시
+width, height, initial-scale, user-scalable, minimum-scale, maximum-scale
+
+*header 제작
+for: 로 id값을 받아와서 제어
+
+*본문 제작
+
+유동적인 크기 조절을 위해 % 이용할 것!
+
+inherit는 위 쪽에 있는 것 따라 감
+
+*폭보다 문자열 길 경우 ...으로 처리
+white-space:nowrap; overflow:hidden; text-overflow:ellipsis;

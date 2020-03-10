@@ -1,0 +1,64 @@
+<css 변형>
+html 태그 요소의 속성이 변경될 때 css3변형 속성을 적용해 변화할 때 애니메이션 적용
+:hover(마우스 올릴때), :active(클릭하고 있는동안)
+transition-duration 이용해 서서히 변하는 것 보여줌
+transition-delay: 2s - 2s만큼 기다렸다가 변함
+transition-timing-function: ease-in 처음엔 느리다가 빨라짐
+transition-timing-function: ease-out 처음엔 빠르다가
+
+transition-property:background-color, height;
+transition-duration:5s, 2s (두 항목 따로)
+
+<css 애니메이션>
+prefixfree.min.js ???
+*키프레임을 이용한 애니메이션
+@keyframe ani1 와 같이 keyframe 만들고
+animation-name, duration, timing-function 설정
+animation-play-state: paused (마우스 올렸을 때 애니메이션 정지)
+animation-iteration-count: infinite (횟수 설정)
+animation-direction: alternate (다시 돌아가도록)
+transform: rotate(0deg), (360deg)로 회전시켜줄 수 있음
+
+<css 변환>
+skewX - x축 기울기
+scaleX - x축 크기
+scale(x,y) 크기
+translate(x, y) 이동
+rotate(n) - 회전
+
+transform-origin:가로 세로 (%단위)
+z-index - 다른 index와의 상하관계 설정(값 높을수록 우선순위 높음)
+
+<css3 규칙> @로 시작하는 키워드들
+*css파일 분리 : css를 HTML 문서에서 분리하여 별도로 관리
+
+* @import 규칙
+@import url('~~.css') - link태그 대신, style 태그 안에, style태그 상단에 써야 함
+
+* @media 규칙 - link 태그에 media 종류에 따라 다른 css 적용
+link에 쓰는 방식
+media="screen"
+media="print"
+
+@media screen 으로 쓰는 방식
+
+<반응형 웹 css>
+@media screen and (max-width:767px) 와 같이 사용
+@media screen and (min-width:768px) and (max-width:959px)
+@media screen and (min-width:960px)
+
+<그리드 레이아웃> - 플러그인 이용
+그리드 시스템 다운 or 직접 만들기
+grid_묶을숫자
+<div class="grid_12 header"> - class명이 grid_12도 될 수 있고 header도 될 수 있다
+<div class="clear"></div>
+
+
+<!-- div.nav>(div>a.nav-link)*5 -->
+
+
+justify-content 수평
+align-items 수직
+
+
+<웹문서 제작 팁>

@@ -1,0 +1,67 @@
+<6강>
+선택자 : 특정 태그 선택, 해당 태그 속성 변경
+style 태그 이용
+선택자 동시 선택 가능! (,이용)
+
+css 코딩하는 법
+특정 태그의 선택자를 이용해 태그를 선택
+선택 후 선택한 태그의 속성과 속성값 입력해서 변경해 줌
+
+background-color, color
+border : px, 선의 스타일(점선 - dashed), 선의 color
+font-weight
+
+전체선택자 : *
+초기값 설정하고 일부 변경할 때 사용
+margin=0, padding=0 좌표에 딱 붙는다
+
+id 선택은 #을 이용해서 (div의 속성으로 선언 후)
+float : left 사용 시 div가 블록 타입이어서 밑으로 떨어져야 하는데 공간이 있으면 옆에 붙음
+바깥 쪽에 overflow:hidden이라는 속성을 줘야 한다
+clear:both 를 이용해서 float 속성 없애준다
+
+class 선택은 .을 이용해서
+
+font-size: n-em (기본이 1배이고 n만큼 비례해서 커짐), px로 입력해도 괜찮음
+text-align: 정렬(왼쪽, 가운데, 오른쪽)
+
+tag, id, class 모두 이용해 선택자 사용하기도 함 (ul li.menu1 과 같이)
+
+*속성 선택자
+속성 선택시 input[type=text]와 같이 대괄호 이용
+
+*후손 및 자손 선택자
+자손은 내 바로 밑에 있는 태그만 선택(div > h1) div 바로 밑의 h1
+후손은 내 밑으로 있는 모든 태그 선택(div li) div 밑의 모든 li
+
+*동위 선택자 (들여쓰기 기준)
++ : 바로 밑의 동등한 태그 선택
+~ : 내 밑의 동등한 위치의 선택자 모두 선택
+
+*반응 선택자
+hover:마우스를 올렸을 때 (a:hover 와 같이 씀)
+margin : 상하좌우로 n-px씩 떨어져 있게 함 or n n n n(상우하좌), 상 하 같을 때 하 생략, 우 좌 같을 때 좌 생략
+         0 auto - 첫번째 값이 top과 bottom 결정, auto 좌우 균등하게(가운데 정렬)
+
+*상태 선택자
+focus : 선택이 된 경우
+enabled : 변경 가능
+disabled : 변경 불가능
+
+*구조 선택자
+처음과 마지막, 홀수번째, 짝수번째 등등
+nth-child(2n+1) : n은 0부터 시작, 홀수번째만 선택(짝수는 2n)
+first-child, last-child : 처음과 마지막(first-of-type, last-of-type으로도 가능)
+border-radius: n n n n(좌상단, 우상단, 우하단, 좌하단) px
+      30px 0 의 경우 : 좌상단, 우하단이 30px, 우상단, 좌하단이 0
+
+*문자 선택자
+첫 문자, 첫 줄 다르게 해줄 때
+
+*링크 선택자 ( a href)
+a href 태그에 속성을 적용할 수 있음
+::after
+
+*부정 선택자
+나를 제외한 모든 태그에 css 속성 적용
+::selection - 선택되었을 때 특정

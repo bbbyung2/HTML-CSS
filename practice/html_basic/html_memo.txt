@@ -1,0 +1,64 @@
+html태그 안에 head 태그, body 태그
+head에 설정값들
+body에 정보전달
+
+h1~h6태그 - 개행 필요 x
+p태그 본문에 쓰임 - 단락 나눌 때
+
+<i> - 기울임
+<sup> - 윗첨자
+<ins> - 밑줄
+<del> - 취소선
+
+ul - unordered, 번호 없이 리스트 나열
+ol - ordered, 번호 붙여서 리스트 나열
+
+수평구조일 때도 <ol>, <ul> 사용 가능
+ol,ul 속성에 target - _blank 새로운 페이지 열림, _self 그 창에서 그대로
+
+img 태그(src, width)
+alt - 이미지 오류 시 보여질 문자열
+
+audio 태그
+controls - controller 추가
+autoplay - 페이지 열리면서 자동으로 play
+loop - 무한반복 여부 (default는 1번 재생)
+
+video 태그
+source 따로 빼주거나 video태그 내에 소스 추가
+
+form 태그 *중요*
+action에는 입력된 페이지가 전송될 서버의 주소
+method에는 get - 도메인 주소 뒤에 입력한 정보 값이 붙어서 서버로 전송(정보 은닉 불가능),
+         post - 도메인 주소 깨끗, 정보가 암호화돼서 서버로 감(정보 은닉 가능)
+
+
+input 태그(type, name 속성)
+type - text : 일반문자
+       password : 기호
+       file : 파일 선택 시
+       radio : n개 중 1개만 사용할 때 (name은 같지만 value다름)
+       checkbox : n개 중 n개 선택 가능(옵션 checked 기본적으로 체크되어 있게)
+       input : action이 지정한 경로로 전송됨
+
+name - 사용자가 입력한 값 가져올 때 사용
+size - 문자열의 길이
+
+textarea 태그(rows, cols)
+
+select 태그(option태그 넣어줌)
+속성에 multiple을 주면 n개 선택 가능
+
+*레이아웃 구성 태그 (블록 태그 - br태그로 개행 안하더라도 개행, 라인 태그 - 쭉 나열)
+div 태그 (블록 형식)
+
+span 태그 (라인 형식)
+
+
+*div를 이용한 레이아웃
+header, menu, 정보(내용), copywriter 등
+
+<hr>태그 : 구분선
+
+*시멘틱을 이용한 레이아웃
+header, nav, section, footer

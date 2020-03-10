@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<style>
+  #header, #content, #footer {
+    width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  #header .left_space, #content .left_space, #footer .left_space {
+    height: 150px;
+    width: 150px;
+    background-color: #777777;
+    float: left;
+    border: 1px solid black;
+  }
+
+  #header .center_space, #content .center_space, #footer .center_space {
+    height: 150px;
+    width: 694px;
+    background-color: #777777;
+    float: left;
+    border: 1px solid black;
+  }
+
+  #header .right_space, #content .right_space, #footer .right_space {
+    height: 150px;
+    width: 150px;
+    background-color: #777777;
+    float: right;
+    border: 1px solid black;
+  }
+
+  #header .left_space, #footer .right_space {
+    border-radius: 30px 0;
+  }
+
+  #header .right_space, #footer .left_space {
+    border-radius: 0 30px;
+  }
+
+  #content .left_space {
+    border-radius: 0 30px 30px 0;
+    height: 300px;
+  }
+
+  #content .right_space {
+    border-radius: 30px 0 0 30px;
+    height: 300px;
+  }
+
+  #header .center_space {
+    border-radius: 0 0 30px 30px;
+  }
+
+  #content .center_space {
+    border-radius: 30px;
+    height: 300px;
+  }
+
+  #footer .center_space {
+    border-radius: 30px 30px 0 0;
+  }
+
+  #content .center_space ul li {
+    list-style: none;
+    display: inline;
+    padding: 0 40px;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  #content .center_space h1 {
+    padding-left: 30px;
+  }
+
+  #content .center_space p {
+    text-align: center;
+  }
+</style>
+<body>
+<div id="header">
+  <div class="left_space"></div>
+  <div class="center_space"></div>
+  <div class="right_space"></div>
+</div>
+<div id="content">
+  <div class="left_space"></div>
+  <div class="center_space">
+    <div>
+      <ul>
+        <li>menu1</li>
+        <li>menu2</li>
+        <li>menu3</li>
+        <li>menu4</li>
+        <br />
+      </ul>
+    </div>
+    <div class="posting">
+      <h1>posting 제목</h1>
+      <p>posting 내용 posting 내용 posting 내용 posting 내용 posting 내용 posting 내용 posting 내용 posting 내용 posting 내용 posting 내용 posting 내용 posting 내용 posting 내용 posting 내용 posting 내용 posting 내용 posting 내용 posting 내용 posting 내용 posting 내용 posting 내용 posting 내용 posting 내용 posting 내용 posting 내용 posting 내용 posting 내용 posting 내용 posting 내용 posting 내용 posting 내용 posting 내용 posting 내용 posting 내용 posting 내용 posting 내용 posting 내용 posting 내용 posting 내용 posting 내용 posting 내용 posting 내용 posting 내용 posting 내용 posting 내용 posting 내용 posting 내용 posting 내용 posting 내용</p>
+    </div>
+  </div>
+  <div class="right_space"></div>
+</div>
+<div id="footer">
+  <div class="left_space"></div>
+  <div class="center_space"></div>
+  <div class="right_space"></div>
+</div>
+</body>
+</html>

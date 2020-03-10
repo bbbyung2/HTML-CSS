@@ -1,0 +1,12 @@
+<web page 실전>
+먼저 수평으로 구역 나누고 그 다음 수직으로 나눔
+
+*쇼핑몰 레이아웃
+gnb(global navigation bar)
+lnb(local navigation bar)
+
+*사용자로 하여금 마우스 클릭 용이하게 하는 법
+메뉴 만들 때 li에 지정하지 않고 a 태그를 display:block으로 바꾸고 padding값 준다.
+
+*웹폰트 : 웹사이트 방문하는 순간, 웹폰트 다운
+font-family:' (family=뒤의 이름) ';

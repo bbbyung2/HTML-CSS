@@ -1,0 +1,67 @@
+<css 속성>
+*css3 단위
+px, %, em
+display:block 일 때 개행해준다
+
+*url : background-image:url() 속성으로 주로 사용
+
+*display 속성 : 화면에 어떻게 보이는지v
+block속성 - div(층으로 쌓아나감), p, li
+inline속성 - span(옆으로 붙여나감), height 속성 적용x, margin속성 상하도 마찬가지
+display:inline-block - block, inline속성 모두 가짐, height 속성 적용o
+none - 보이지 않음
+list-style:none (리스트 앞에 점 없애줌) 보통 ul에 선언해줌
+clear:both - 적용되었던 float 속성 없애줌
+
+*visibility 속성 : 화면에 보이고/안 보이고
+display:none - 화면 상에 안 보이고, 자릿값도 없어짐
+visibility:hidden - 화면 상에 안 보이고, 자릿값은 있음
+
+*opacity 속성 : 투명도 조절
+1이 기본값, 0~1.0 값 설정
+
+*margin 및 padding 속성
+margin(투명한 여백) - n n n n
+padding(background의 확장) - n n n n  ( a 태그 클릭 범위 넓히기 위해 사용되기도 함)
+(10px 10px)상하, 좌우 연관
+(10px)전부 같게
+border:10px - 여기서 10px은 바깥 쪽으로 형성
+box-sizing:border-box - box 안 쪽으로 형성
+
+*border 속성
+width, style, color
+border-top, border-bottom 처럼 일부만 가능
+
+#background-image 속성
+url()
+background-size: %로
+background-repeat:no-repeat (한번만, default는 반복)
+background-attachment:fixed (맨 왼 쪽부터 이미지 시작)
+
+*font-family, font-size 속성
+font-family 뒤에 여러개 나열 시 우선순위
+font-size - 1.0em이 default
+
+*font-style, font-weight, line-weight 속성
+font-style: italic, normal 등
+font-weight:bold(수치로도 가능)
+line-weight: height와 값 같게 하면 세로 가운데 정렬 (가로 가운데 정렬은 text-align:center)
+text-decoration:none - 링크에 밑줄 없애기, underline, 꼭 a태그에 먼저 적용해줄 것!
+text-align - 정렬(image에도 적용 가능) text를 감싼 태그에 적용
+
+*position 속성 : 요소의 위치 설정
+position:absolute - 감싸고 있는 태그의 좌상단 기준으로
+position:fixed - 브라우저 영향 없이 항상 화면에 고정되어 있음
+position:static - default의 값 (div는 block type이므로 층층이 나열됨)
+position:relative - 감싸고 있는 태그의 좌하단 기준(top, left 이용)
+relative와 absolute 같이 이용 - z-index값이 클수록 더 상단, 안쪽 요소에 absolute가 있으면 밖에 감싸고 있는 태그는 relative
+
+*float 속성 : 요소의 위치 설정
+block type의 태그를 왼쪽으로 붙일 때 float:left로 많이 사용
+
+*gradient 속성 : 2가지 이상의 색 표현
+
+리스트의 경우 ul에 overflow:hidden 하고 ul li에 float:left해줌
+padding값 모두 주고 padding-left:0 따로 해주는 방법 주로 씀
+
+margin: 0 auto 는 큰 덩어리에 써줌
